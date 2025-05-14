@@ -8,5 +8,6 @@ add_executable(EasyHTTP main.cpp
         url.cpp
         url.h
         request.cpp
-        request.h)
+        request.h
+        print.cpp)
 target_link_libraries(EasyHTTP ws2_32)

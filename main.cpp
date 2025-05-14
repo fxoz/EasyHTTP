@@ -1,6 +1,5 @@
 #include <iostream>
-#include <map>
-#include <string>
+ #include <string>
 
 #include "request.h"
 #include "url.h"
@@ -17,12 +16,6 @@ void testing_url() {
 int main() {
     WebResponse r = request("https://echo-http-requests.appspot.com/echo");
 
-    std::cout << "Raw response: " << r.raw << std::endl;
-    std::cout << "HTTP Version: " << r.httpVersion << std::endl;
-    std::cout << "Status Code: " << r.statusCode << std::endl;
-    std::cout << "Latency full: " << r.latencyFullMs << "ms" << std::endl;
-    std::cout << "Latency response: " << r.latencyResponseMs << "ms" << std::endl;
-    std::cout << "Error: " << r.getError() << std::endl;
-
+    std::cout << r;
     return 0;
 }
